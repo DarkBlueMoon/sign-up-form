@@ -1,9 +1,64 @@
+@font-face {
+  font-family: "NorseBold";
+  src: url("assets/Norse-Bold.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: blue;
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* LOGO STYLING */
+
+.sidebar {
+  background: no-repeat center/cover url("assets/susan-wilkinson-FlKis6BzvRo-unsplash.jpg");
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.odin-title {
+  font-family: "NorseBold";
+  color: #fff;
+  font-size: 6rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0 0 0 / 50%);
+
+  height: 150px;
+  margin-top: 200px;
+
+  padding: 10px 0;
+}
+
+.odin-img {
+  width: auto;
+  height: 125px;
+}
+
+.main-content {
+  flex: 4;
+}
+
+.credits {
+  text-align: center;
+  color: #fff;
+  background-color: rgb(0 0 0 / 20%);
+  margin-bottom: 2%;
+}
+
+.credits a {
+  color: #fff;
 }
