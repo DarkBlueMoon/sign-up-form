@@ -14,10 +14,9 @@
   height: 100vh;
 }
 
-/* LOGO STYLING */
+/* SIDEBAR STYLING */
 
 .sidebar {
-  /* background: no-repeat center/cover url("assets/susan-wilkinson-FlKis6BzvRo-unsplash.jpg"); */
   background: no-repeat center/cover url("assets/samuel-arkwright-dTLLaxj2mWw-unsplash.jpg");
 
   display: flex;
@@ -49,10 +48,6 @@
   height: 125px;
 }
 
-.main-content {
-  flex: 4;
-}
-
 .credits {
   text-align: center;
   color: #fff;
@@ -61,4 +56,56 @@
 
 .credits a {
   color: #fff;
+}
+
+/* MAIN SECTION */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 4;
+  background-color: #eee;
+}
+
+.intro,
+.form,
+.create {
+  padding-left: 50px;
+}
+
+.intro .italic {
+  font-style: italic;
+}
+
+.form {
+  background-color: #fff;
+}
+
+.form-wrapper {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column input {
+  margin-right: 50px;
+}
+
+.create-btn {
+  background-color: #25292a;
+  color: white;
+  padding: 8px 30px;
+  border: transparent solid 1px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.login {
+  font-weight: bold;
+  color: #766868;
+  text-decoration: none;
 }
