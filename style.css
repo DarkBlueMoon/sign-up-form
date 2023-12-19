@@ -17,7 +17,8 @@
 /* LOGO STYLING */
 
 .sidebar {
-  background: no-repeat center/cover url("assets/susan-wilkinson-FlKis6BzvRo-unsplash.jpg");
+  /* background: no-repeat center/cover url("assets/susan-wilkinson-FlKis6BzvRo-unsplash.jpg"); */
+  background: no-repeat center/cover url("assets/samuel-arkwright-dTLLaxj2mWw-unsplash.jpg");
 
   display: flex;
   flex-direction: column;
@@ -55,7 +56,6 @@
 .credits {
   text-align: center;
   color: #fff;
-  background-color: rgb(0 0 0 / 20%);
   margin-bottom: 2%;
 }
 
