@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .main-container {
   display: flex;
   height: 100vh;
@@ -22,7 +26,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 1;
+  flex: 1 0 auto;
 }
 
 .odin-title {
@@ -38,7 +42,7 @@
   background-color: rgb(0 0 0 / 50%);
 
   height: 150px;
-  margin-top: 200px;
+  margin-top: 20vh;
 
   padding: 10px 0;
 }
@@ -51,7 +55,7 @@
 .credits {
   text-align: center;
   color: #fff;
-  margin-bottom: 2%;
+  margin-bottom: 2vh;
 }
 
 .credits a {
@@ -64,44 +68,99 @@
   flex-direction: column;
   justify-content: space-evenly;
   flex: 4;
-  background-color: #eee;
+  background-color: #f9f9f9;
+  gap: 50px;
 }
 
 .intro,
-.form,
+.form-section,
 .create {
   padding-left: 50px;
+  flex: 1;
 }
 
 .intro .italic {
   font-style: italic;
 }
 
-.form {
+.intro {
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.intro p+p {
+  margin-top: 20px;
+}
+
+.form-section {
   background-color: #fff;
+}
+
+.form-section p {
+  padding-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  margin-top: 30px;
+
+  align-items: center;
 }
 
 .form-wrapper {
   display: flex;
+  width: 100%;
+  gap: 100px;
 }
 
 .column {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .column input {
-  margin-right: 50px;
+  width: 225px;
+  height: 32px;
+  font-size: 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 5px;
+  padding: 12px 6px;
+}
+
+.column input.error {
+  border: 1px solid #f00;
+}
+
+.column input:focus {
+  border: 1px solid #00f;
+  outline: none;
+}
+
+.column label {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  margin-bottom: 2px;
 }
 
 .create-btn {
   background-color: #25292a;
   color: white;
-  padding: 8px 30px;
+  padding: 14px 50px;
   border: transparent solid 1px;
   border-radius: 5px;
   font-weight: bold;
   margin-bottom: 30px;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .login {
